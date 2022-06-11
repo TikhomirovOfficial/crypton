@@ -1,0 +1,77 @@
+.CartBar {
+  top: 0;
+  background: rgba(0, 0, 0, 0.41);
+  left: 0;
+  z-index: 4;
+ 
+  .CartEmpty {
+    flex: 1;
+  }
+
+  .CartBlock {
+    width: 550px;
+    animation: in-right-slide 0.5s ease;
+    padding: 40px;
+    @media (max-width: 1600px) {
+      & {
+        width: 450px;
+      }
+    } 
+    .CartProducts {
+      flex: 0.9;
+      overflow-y: auto;
+      &::-webkit-scrollbar{
+        width: 6px;  
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba(195, 195, 195, 0.458);
+        border-radius: 30px;
+      }
+    }
+    .CartInfo {
+      font-size: 20px;
+      .line {
+        flex: 0.98;
+        height: 75%;
+        border-bottom: 2px dashed #c9c9c9;
+      }
+      @media (max-width: 1600px) {
+        & {
+         font-size: 17px;
+        }
+      } 
+    }
+    .CartButton {
+      background: #9DD458;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      transition: 0.3s;
+      font-size: 20px;
+      border-radius: 20px;
+      img {
+        transition: 0.3s;
+      }
+      @media (max-width: 1600px) {
+        & {
+          font-size: 16px;
+        }
+      } 
+      &:hover {
+        background: #9fc977;
+        & > img {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+
+}
+@keyframes in-right-slide {
+  from {
+    transform: translateX(200vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  width: 70vw;
+  margin: 0 auto;
+}
+.SectionTitle {
+  margin-bottom: 30px;
+}
+.Carts {
+  gap: 60px 35px;
+}
+.ProductsSection {
+  margin-top: 140px;
+}

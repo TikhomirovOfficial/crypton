@@ -1,0 +1,23 @@
+.Cart {
+  padding: 30px 40px;
+  border-radius: 30px;
+  border: 1px solid #e8e8e8;
+  max-width: 265px;
+  .favorite {
+    height: 40px;
+    width: 40px;
+  }
+  .Cart__image {
+    width: 180px;
+    height: 120px;
+    align-self: center;
+  }
+  .Cart__title {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .Cart__add {
+    width: 40px;
+    height: 40px;
+  }
+}

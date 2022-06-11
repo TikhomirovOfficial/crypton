@@ -1,0 +1,33 @@
+.ProductInCart {
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #d3d3d3;
+  @media (max-width: 1600px) {
+    padding: 20px 30px;
+    p {
+      font-size: 14px;
+    }
+  } 
+  .ProductImage {
+    width: 100px;
+    @media (max-width: 1600px) {
+      & {
+        width: 70px;
+      }
+    } 
+  }
+  .CountBlock {
+    .count {
+      align-self: center;
+      color: gray;
+      font-size: 16px;
+    }
+    button {
+      background: inherit;
+      font-size: 23px ;
+      cursor: pointer;
+      font-weight: 500;
+      
+    }
+  }
+}
